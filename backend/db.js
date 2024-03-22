@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('')
+mongoose.connect('mongodb+srv://aditi:duaLipa21@cluster0.uybrrhv.mongodb.net/')
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
@@ -33,6 +33,7 @@ const userSchema = new mongoose.Schema({
         maxLength: 50
     }
 });
+
 
 const acccountSchema = new mongoose.Schema({
     userId: {
