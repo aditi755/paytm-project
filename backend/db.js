@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema({
 
 const acccountSchema = new mongoose.Schema({
     userId: {
-        type: mongoose.Schema.Types.ObjectId;
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User', //if a user is present them only assciate it with an account
         required: true
     },
